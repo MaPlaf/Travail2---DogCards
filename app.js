@@ -18,15 +18,15 @@ btn.addEventListener('click', function() {
     let dAge = getRandomNumber(1, 20);
     let dReg = getRandomNumber(100, 999);
 
+    dogId.textContent = dId;
+    dogReg.textContent = dReg;
+    
     if (dAge == 1){
-        dAge = dAge + ' Year';
+        dogAge.textContent = dAge + ' Year';
     }else{
-        dAge = dAge + ' Years';
+        dogAge.textContent = dAge + ' Years';
     }
 
-    dogId.textContent = dId;
-    dogAge.textContent = dAge;
-    dogReg.textContent = dReg;
 });
 
 
